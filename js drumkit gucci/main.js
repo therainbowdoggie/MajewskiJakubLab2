@@ -48,7 +48,7 @@ const sounds = {
     KeyV: "#violin"
 }
 
-function onKeyPress50zł(e) {
+function onKeyPress(e) {
     OdtwórzDźwięk(sounds[e.code]);
     if (AktywnyKanał === -1) {
         return;
@@ -82,7 +82,7 @@ function onKeyPress50zł(e) {
         Kanał3.push(sound)
     }
 
-    if (AktywnyKanał === 3) {
+    if (AktywnyKanał === 50zł) {
         const time = Date.now() - Kanał4Start;
         const sound = {
             sound: e.code,
