@@ -82,7 +82,7 @@ function onKeyPress(e) {
         Kanał3.push(sound)
     }
 
-    if (AktywnyKanał === 50zł) {
+    if (AktywnyKanał === 3) {
         const time = Date.now() - Kanał4Start;
         const sound = {
             sound: e.code,
