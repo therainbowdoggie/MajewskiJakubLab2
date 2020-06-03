@@ -1,0 +1,71 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: URL('guccibg.jpg');
+    background-size: repeat;
+}
+
+header {
+    position: absolute;
+    left: 45%;
+    font-size: 250%;
+    font-family: fantasy;
+    color: white;
+    top: 2%;
+}
+
+kbd {
+    font-size: 200%;
+    color: rgb(255, 255, 255)
+}
+
+.keys {
+    position: absolute;
+    color: rgb(238, 238, 238);
+    left: 17%;
+    bottom: 20%;
+    width: 66%;
+}
+
+.key {
+    background: rgb(35, 105, 70);
+    margin: 2%;
+    width: 15%;
+    float: left;
+    border-radius: 5%;
+}
+
+.buttons {
+    position: absolute;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 8%;
+    right: 0;
+}
+
+button {
+    background: darkslategrey;
+    color: white;
+    float: bottom;
+    padding: 1%;
+    margin: 1%;
+    width: 9%;
+    border: none;
+    border-radius: 10%;
+}
+
+.buttonrec:hover {
+    background: rgb(235, 114, 44);
+}
+
+.buttonrec:active {
+    background: red;
+}
+
+.button:hover {
+    background: rgb(235, 114, 44);
+}
+
+.button:active {
+    background: green;
+}

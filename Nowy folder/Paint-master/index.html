@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Solway:500&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>PAINT</title>
+</head>
+
+<body>
+
+  <div class="imageField">
+    <div class="imageUpload">
+      <label for="imageLoader" class="imageLoaderLabel">
+            <img src="https://img.icons8.com/nolan/96/000000/upload.png"><br>
+        <p8>Upload image</p8>
+      </label>
+
+      <input type="file" class="imageLoader" id="imageLoader" name="imageLoader" />
+      <canvas class="imageCanvas"></canvas>
+    </div>
+  </div>
+
+  <div class="toolbar" title="Brush and size">
+      <div class="tBarSave" title="Pobierz">
+          <div class="tBarIcon">
+            <img src="https://img.icons8.com/nolan/64/000000/download-from-cloud.png">   
+           </div>
+    
+          <a href="" class="savePainting"></a>
+        </div>
+        <div class="tBarClear" title="Wyczyść">
+          <div class="tBarIcon">
+            <img src="https://img.icons8.com/nolan/64/000000/trash.png">
+          </div>
+        </div>  
+    <div class="tBarWrapper">
+      <div class="tBarIcon">
+        <img src="https://img.icons8.com/nolan/64/000000/paint-brush.png">
+      </div>
+      <div class="tBarPanel">
+        <span class="toolbar__brush tBarBrushCircle toolbar__brush--selected"></span>
+        <span class="toolbar__brush tBarBrushSquare"></span>
+        <input type="range" min="5" max="100" value="5" class="slider-brush" id="sizeRange">
+      </div>
+    </div>
+
+    <div class="tBarWrapper" title="Kolor">
+      <div class="tBarIcon">
+        <img src="https://img.icons8.com/nolan/64/000000/paint-palette.png">
+      </div>
+      <div class="tBarPanel">
+        <input type="color" value="#ffffff" id="pickColor" class="palette">
+      </div>
+    </div>
+
+    <div class="tBarWrapper" title="Jasność">
+      <div class="tBarIcon">
+        <img src="https://img.icons8.com/nolan/64/000000/illumination-brightness.png">
+      </div>
+      <div class="tBarPanel">
+        <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-4.png" onclick="darkenImage()"></button>
+        <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-3.png" onclick="lighterImage()"></button>
+      </div>
+    </div>
+
+    <div class="tBarWrapper" title="Nasycenie">
+      <div class="tBarIcon">
+        <img src="https://img.icons8.com/nolan/64/000000/horizontal-settings-mixer.png">
+      </div>
+      <div class="tBarPanel">
+          <!-- <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-4.png" onclick="setSaturation()"></button> -->
+          <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-4.png" onclick="contrastImagePlus()"></button>
+          <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-4.png" onclick="contrastImageMinus()"></button>
+        </div>
+    </div>
+
+    <!-- <div class="tBarWrapper" title="Rozmycie">
+      <div class="tBarIcon">
+        <img src="https://img.icons8.com/nolan/64/000000/water.png">
+      </div>
+      <div class="tBarPanel">
+          <button id="buttonSettings"><img src="img/icons8-reflector-bulb-30-4.png" onclick="saturationP()"></button>
+
+      </div>
+    </div> -->
+
+    
+
+
+  </div>
+  <!-- <script src="Settings.js"></script>
+  <script src="Drawing.js"></script>
+  <script src="CanvasObj.js"></script>
+  <script src="main.js"></script>  -->
+  <script src="index.js"></script>
+</body>
+
+</html>

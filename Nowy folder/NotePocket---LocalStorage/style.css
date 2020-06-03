@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  background-size: cover;
+  background-image: url("/img/background.jpg")
+}
+#navbar{
+  width: 100%;
+  height: 5vw;
+  text-align: center;
+}
+#container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+}
+#mainStream{
+  width: 100%;
+  height: 5vw;
+  position: relative;
+  color: whitesmoke;
+  align-items: center;
+  
+}
+#mainStream h1{
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Girassol', cursive;
+
+  
+}
+.addNote{
+  background-color: transparent;
+  color: azure;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20%;
+}
+#notes{
+  width:100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+}
+/* #noteDate {
+  width: 10vw;
+  height: 100%;
+  float: right;
+  font-size: 25px;
+  text-align: left;
+  background-color: violet;
+  position: relative;
+} */
+
+textarea {
+  resize: none;
+  
+}
+.firstNote {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  order: 0;
+  width: 20vw;
+  font-size: 18px !important;
+  align-items: center;
+}
+.firstNote .noteDesc{
+  margin-top: 10px;
+}
+.firstNote .noteTitle{
+  height: 30px;
+}
+.firstNote footer{
+  padding-top: 10px;
+  text-align: right;
+}
+.note {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  order: 2;
+}
+.noteTitle{
+  text-align: center;
+}
+.noteDesc{
+  height: 150px;
+  
+}
+.noteTitle, .noteDesc{
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+}
+.noteFooter button, .noteFooter input{
+  float: right;
+}
+#notesDiv {
+  
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, 400px);
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  justify-content: center;
+}
+#popup{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, 400px);
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  width: 20vw;
+  margin-left: 38%;
+  justify-content: center;
+}
+.holder{
+  display: inline-block;
+}
+.color{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.red{
+  background: red;
+}
+.black{
+  background: hsl(0, 1%, 18%);
+}
+.yellow{
+  background: #dbdb58;
+}
+.blue{
+  background: #225fd9;
+}
+.green{
+  background: rgb(42, 135, 50);
+}
+/* .starter{
+  background-image: url("./img/fitstImage.jpg");
+  background-size: cover;        
+} */
+#navbar p1{
+  font-size: 3vw;
+  color: whitesmoke;
+  font-family: 'Poiret One', cursive;
+
+
+}
