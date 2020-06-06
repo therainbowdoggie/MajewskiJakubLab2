@@ -1,0 +1,58 @@
+body{
+background-image: url("./img/bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+}
+#start{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 20vw;
+    height: 15vw;
+    font-size: 3vw;
+    color: red;
+    border-radius: 35%;
+
+}
+#reset{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 25vw;
+    height: 25vw;
+    font-size: 3vw;
+    color: red;
+    background-color: blueviolet;
+    border-radius: 35%;
+
+}
+#ball {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: red;
+    top: 4vw;
+    position: absolute;
+    left: 4vw;;
+}
+
+.hole, .correctHole{ 
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+}
+.hole{
+    background-image: url("./img/1516664216_giphy.gif");
+    background-position: center;
+
+}
+.correctHole{
+    background-image: url("./img/example-trefoil.gif");
+    background-position: center;
+    z-index: -1;
+}
+.prevHole{
+    background: rgb(157, 196, 157);
+}
